@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: consumer
+  kafka:
+    partition:
+      number: 0
+    topic:
+      name: order
+      group-id: book
+    bootstrap-servers: ${KAFKA-HOST:localhost}:${KAFKA-PORT:9092}
+    listener:
+      ack-mode: record
+
+  datasource:
+    url: jdbc:postgresql://${DATABASE-URL:dburl}:${DATABASE-PORT:5432}/${DATABASE-NAME:kafka_test}?search_path=${DATABASE-SCHEMA:kafka_test}
+    username: ${DATABASE-USERNAME:postgres}
+    password: ${DATABASE-PASSWORD:password}
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    url: jdbc:postgresql://${DATABASE-URL:dburl}:${DATABASE-PORT:5432}/${DATABASE-NAME:kafka_test}
+    user: ${DATABASE-USERNAME:postgres}
+    password: ${DATABASE-PASSWORD:password}
+    default-schema: ${DATABASE-SCHEMA:kafka_test}
+    locations: classpath:db/migration
+server:
+  port: 8082

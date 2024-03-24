@@ -1,0 +1,22 @@
+INSERT INTO book (title, quantity)
+VALUES
+    ('To Kill a Mockingbird', 40000),
+    ('1984', 40000),
+    ('Pride and Prejudice', 40000),
+    ('The Great Gatsby', 40000),
+    ('The Catcher in the Rye', 40000),
+    ('Moby-Dick', 40000),
+    ('War and Peace', 40000),
+    ('The Lord of the Rings', 40000),
+    ('The Hobbit', 40000),
+    ('The Adventures of Huckleberry Finn', 40000),
+    ('Brave New World', 40000),
+    ('Crime and Punishment', 40000),
+    ('The Grapes of Wrath', 40000),
+    ('Jane Eyre', 40000),
+    ('Frankenstein', 40000),
+    ('Wuthering Heights', 40000),
+    ('One Hundred Years of Solitude', 40000),
+    ('The Picture of Dorian Gray', 40000),
+    ('The Chronicles of Narnia', 40000),
+    ('Alice''s Adventures in Wonderland', 40000);
